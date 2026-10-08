@@ -1,0 +1,23 @@
+﻿=== GAME SENSITIVITY NOTES ===
+Try to set the FOV and screen resolution identically across all games
+
+
+main game
+
+  Resolution:                   
+  Aspect Ratio:                 
+  FOV:                          
+  Sensitivity in game (Sens):   
+  Measurement Result (Units):   
+
+---------------------------------
+
+next game
+
+  Resolution:                   
+  Aspect Ratio:                 
+  FOV:                          
+  Sensitivity in game:          
+  Measurement Result (Units):   
+
+---------------------------------
