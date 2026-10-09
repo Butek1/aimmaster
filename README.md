@@ -17,7 +17,7 @@ AimMaster is a tool designed to help you replicate your exact mouse sensitivity 
 • 🛑 If the camera spins uncontrollably due to window focus loss, press Page Up to emergency stop.
 
 
-
+### Video Tutorial  https://www.youtube.com/watch?v=ZFGSzbQt8FQ
 
 🎯 Описание
 
