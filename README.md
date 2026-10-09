@@ -35,3 +35,47 @@ AimMaster — это инструмент для точного переноса
 
 • 🖥️ Старайтесь настраивать FOV, формат и разрешение экрана во всех играх одинаково.
 • 🛑 Если игра перехватила курсор и камера бесконечно вращается, нажмите клавишу Page Up для экстренной остановки.
+
+
+## 🛠️ Troubleshooting / Решение проблем
+
+Choose your language: [English](#english) | [Русский](#русский)
+
+---
+
+
+If AimMaster is not rotating your camera or the overlay is hidden, check the common solutions below:
+
+#### 1. The overlay is missing or invisible in game
+* **Cause:** The game is running in "Exclusive Fullscreen" mode, which blocks Windows desktop layers.
+* **Solution:** Go to your game's video settings and switch the display mode to **Borderless Windowed** or **Windowed**. 
+
+#### 2. The script runs, but the camera does not rotate inside the game
+* **Cause A:** The game bypasses Windows and reads mouse data directly from the hardware (Raw Input).
+* **Solution A:** Open the game's control settings and temporarily **disable Raw Input** (Direct Input) during the measurement.
+* **Cause B:** Insufficient Windows privileges. The game is running with administrator rights, blocking the script's inputs.
+* **Solution B:** Close the script completely. Right-click `aimmaster.ahk` (or the compiled `.exe`) and select **"Run as administrator"**.
+
+#### 3. The camera spins endlessly or uncontrollably
+* **Cause:** The game lost window focus while the key was pressed, trapping the script in a rotation loop.
+* **Solution:** Press the **`Page Up`** key on your keyboard. This is a hardcoded panic switch that immediately terminates all active rotation timers and resets the script state.
+
+---
+
+
+Если программа AimMaster не вращает камеру или оверлей не отображается в игре, ознакомьтесь с решениями основных проблем ниже:
+
+#### 1. Оверлей таймера пропал или не виден поверх игры
+* **Причина:** Игра запущена в режиме «Эксклюзивного полного экрана» (Fullscreen), который блокирует отображение любых окон Windows поверх себя.
+* **Решение:** Зайдите в графические настройки игры и переключите режим отображения на **«Безрамочное окно» (Borderless Windowed)** или **«Оконный режим» (Windowed)**.
+
+#### 2. Скрипт работает, но камера в самой игре не крутится
+* **Причина А:** В игре активен «Прямой ввод» (Raw Input). Игра считывает движения мыши напрямую от железа в обход операционной системы.
+* **Решение А:** Зайдите в настройки управления игры и временно **выключите Raw Input** (Прямой ввод) на время проведения замера.
+* **Причина Б:** Недостаточно прав в системе. Игра запущена от имени администратора и блокирует команды от обычных программ.
+* **Решение Б:** Полностью закройте AimMaster. Нажмите правой кнопкой мыши по файлу скрипта (или `.exe`) и выберите **«Запуск от имени администратора»**.
+
+#### 3. Камера в игре бешено и бесконечно вращается
+* **Причина:** Игра потеряла фокус окна в момент зажатия клавиши, из-за чего скрипт «зависнул» в цикле вращения.
+* **Решение:** Нажмите клавишу **`Page Up`** на клавиатуре. Это встроенная «кнопка паники», которая мгновенно останавливает все таймеры вращения и возвращает оверлей в центр экрана.
+
